@@ -44,11 +44,7 @@ export default function Home() {
         <title>Reddit Feed</title>
       </Head>
       <div className="bg-[rgb(36,36,36)] h-[100%] text-white px-10 ">
-        <Header
-          input={subreddit}
-          change={setSubreddit}
-          handleInputChange={handleInputChange}
-        />
+        <Header input={subreddit} handleInputChange={handleInputChange} />
         <section id="article" className="max-w-7xl mx-auto ">
           {articles != null
             ? articles.map((article, index) => (

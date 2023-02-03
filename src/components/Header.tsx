@@ -5,12 +5,12 @@ import React, { useState } from "react";
 import RedditLogo from "../images/reddit-logo.png";
 
 type Props = {
-  input: [];
-  change: [];
-  handleInputChange: [];
+  input: string;
+  onChange?: (e: any) => void;
+  handleInputChange?: (e: any) => void;
 };
 
-export default function header({ input, change, handleInputChange }: Props) {
+export default function header({ input, handleInputChange }: Props) {
   return (
     <div className="w-[100] p-5 text-4xl border-b-2">
       <div className="flex justify-between">
