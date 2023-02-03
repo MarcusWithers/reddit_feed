@@ -1,4 +1,4 @@
-Live site - https://reddit-feed-ten.vercel.app/ <br/>
+Live site - https://reddit-feed-six.vercel.app/  <br/>  <br/>
 Reddit feed application that shows the top 25 "hot" posts of any public subreddit. The data is displayed through the use of json files that are dynamically changed based on the user input. If a post is missing a thumbnail a default "Reddit" logo will be placed there instead.<br/>
 
 How to use - <br/>
