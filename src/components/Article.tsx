@@ -18,7 +18,7 @@ type Props = {
 export default function Article({ articleData }: Props) {
   return (
     <Link href={"https://reddit.com" + articleData.permalink} target="_blank">
-      <article className="flex items-center p-5 my-5 space-x-2 border border-white rounded-md relative">
+      <article className="flex flex-col md:flex-row items-center p-5 my-5 space-x-2 border border-white rounded-md relative">
         {articleData.thumbnail.includes("https") ? (
           <motion.img
             initial={{ y: -500, opacity: 0 }}
@@ -39,7 +39,7 @@ export default function Article({ articleData }: Props) {
           />
         )}
 
-        <div className="space-y-5 ">
+        <div className="space-y-5 mt-5 md:mt-0 ">
           <h3 className="hover:bg-red-500 text-2xl inline">
             {articleData.title}
           </h3>

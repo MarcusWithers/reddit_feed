@@ -20,12 +20,12 @@ export default function header({ input, handleInputChange }: Props) {
           transition={{ delay: 0.5 }}
           className="before:content-['/r/'] flex items-center"
         >
-          <form>
+          <form className="max-w-[200px] md:max-w-[none]">
             <input
               type="text"
               value={input}
               onChange={handleInputChange}
-              className="input text-red-500 lowercase bg-none border-none outline-none color bg-[rgb(36,36,36)] pl-1"
+              className="input text-red-500 max-w-[200px] md:max-w-[none] lowercase bg-none border-none outline-none color bg-[rgb(36,36,36)] pl-1"
             />
           </form>
           {/*<input
