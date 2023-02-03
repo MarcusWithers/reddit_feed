@@ -4,7 +4,11 @@ import Link from "next/link";
 import React, { useState } from "react";
 import RedditLogo from "../images/reddit-logo.png";
 
-type Props = {};
+type Props = {
+  input: [];
+  change: [];
+  handleInputChange: [];
+};
 
 export default function header({ input, change, handleInputChange }: Props) {
   return (

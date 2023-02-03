@@ -5,7 +5,9 @@ import Link from "next/link";
 import React from "react";
 import RedditLogo from "../images/reddit-logo.png";
 
-type Props = {};
+type Props = {
+  articleData: [];
+};
 
 export default function Article({ articleData }: Props) {
   return (
