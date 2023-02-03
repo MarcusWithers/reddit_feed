@@ -6,7 +6,13 @@ import React from "react";
 import RedditLogo from "../images/reddit-logo.png";
 
 type Props = {
-  articleData: [];
+  articleData: {
+    permalink: string;
+    thumbnail: string;
+    title: string;
+    ups: number;
+    subreddit_name_prefixed: string;
+  };
 };
 
 export default function Article({ articleData }: Props) {
